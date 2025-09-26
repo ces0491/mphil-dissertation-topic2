@@ -1,0 +1,198 @@
+---
+title: "Bridging the Credit Gap: A Framework for Implementing Alternative Credit Scoring in South Africa"
+subtitle: "ECO5016W - Minor Dissertation in FinTech (Non-unitary option)"
+author: "Cesaire Tobias"
+date: "2025-11-01"
+format:
+  pdf:
+    date-format: "DD MMMM, YYYY"
+    toc: true
+    toc-depth: 3
+    lot: true
+    lof: true
+    number-sections: true
+    colorlinks: true
+    documentclass: article
+    geometry: margin=1in
+    fontsize: 11pt
+    linestretch: 1.5
+    cite-method: citeproc
+    bibliography: references.bib
+    csl: harvard-cite-them-right.csl
+    link-citations: true
+    keep-tex: false
+    fig-pos: 'H'
+    tbl-pos: 'H'
+    include-in-header:
+      text: |
+        \usepackage{float}
+        \usepackage{placeins}
+        \usepackage{array}
+        \usepackage{booktabs}
+        \floatplacement{figure}{H}
+        \floatplacement{table}{H}
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+```{r setup, include=FALSE}
+options(repos = c(CRAN = "https://cran.rstudio.com/"))
+
+required_packages <- c("dplyr", "ggplot2", "stringr", "tidyr", "forcats", "flextable", "officer", "knitr", "scales")
+optional_packages <- c("cqThemes")
+
+github_packages <- list(
+  cqThemes = "ces0491/cqThemes"
+)
+
+if (!"remotes" %in% installed.packages()[, "Package"]) {
+  install.packages("remotes", quiet = TRUE)
+}
+
+installed <- installed.packages()[, "Package"]
+missing_packages <- setdiff(required_packages, installed)
+
+cran_missing <- setdiff(missing_packages, names(github_packages))
+if (length(cran_missing) > 0) {
+  install.packages(cran_missing, quiet = TRUE)
+}
+
+for (pkg in optional_packages) {
+  if (!pkg %in% installed && pkg %in% names(github_packages)) {
+    tryCatch({
+      remotes::install_github(github_packages[[pkg]], quiet = TRUE)
+    }, error = function(e) NULL)
+  }
+}
+
+invisible(lapply(required_packages, function(pkg) {
+  suppressPackageStartupMessages(library(pkg, character.only = TRUE))
+}))
+
+for (pkg in optional_packages) {
+  tryCatch({
+    suppressPackageStartupMessages(library(pkg, character.only = TRUE))
+  }, error = function(e) NULL)
+}
+
+cqthemes_available <- "cqThemes" %in% (.packages())
+
+if (cqthemes_available) {
+  tryCatch({
+    use_pdf_theme(seed = 0491)
+  }, error = function(e) {
+    cqthemes_available <<- FALSE
+  })
+}
+
+if (!cqthemes_available) {
+  theme_set(theme_minimal())
+}
+
+if (cqthemes_available) {
+  get_colors <- function(n = 4, type = "categorical") {
+    cq_colors(n, type = type)
+  }
+  get_theme <- function() theme_cq_pdf()
+} else {
+  get_colors <- function(n = 4, type = "categorical") {
+    colors <- c("#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b")
+    return(colors[1:min(n, length(colors))])
+  }
+  get_theme <- function() theme_minimal()
+}
+
+options(scipen = 999)
+```
+
+```{r wordcount, include=FALSE}
+count_words_qmd <- function(file_path) {
+  raw_text <- readLines(file_path, warn = FALSE)
+  
+  body_text <- ""
+  in_code_chunk <- FALSE
+  in_yaml <- FALSE
+  yaml_delim_count <- 0
+  
+  for (i in seq_along(raw_text)) {
+    line <- raw_text[i]
+    line_trimmed <- trimws(line)
+    
+    if (line_trimmed == "---") {
+      yaml_delim_count <- yaml_delim_count + 1
+      if (yaml_delim_count == 1) {
+        in_yaml <- TRUE
+        next
+      } else if (yaml_delim_count == 2) {
+        in_yaml <- FALSE
+        next
+      }
+    }
+    
+    if (in_yaml) next
+    
+    if (grepl("^#+\\s*(References|Bibliography|Works Cited|Literature Cited)", 
+              line_trimmed, ignore.case = TRUE)) {
+      break
+    }
+    
+    if (grepl("^```", line_trimmed)) {
+      in_code_chunk <- !in_code_chunk
+      next
+    }
+    
+    if (in_code_chunk) next
+    
+    if (grepl("^#+", line_trimmed)) next
+    
+    if (grepl("^fig\\.|^tbl\\.|fig\\.cap|caption\\s*=|include\\s*=|echo\\s*=", line_trimmed)) next
+    
+    processed_line <- line
+    
+    processed_line <- gsub("`[^`]*`", "", processed_line)
+    processed_line <- gsub("\\*\\*([^*]+)\\*\\*", "\\1", processed_line)
+    processed_line <- gsub("\\*([^*]+)\\*", "\\1", processed_line)
+    processed_line <- gsub("_([^_]+)_", "\\1", processed_line)
+    processed_line <- gsub("\\[([^]]+)\\]\\([^)]+\\)", "\\1", processed_line)
+    processed_line <- gsub("!\\[([^]]*)\\]\\([^)]+\\)", "", processed_line)
+    processed_line <- gsub("[@][A-Za-z0-9_:-]+", "", processed_line)
+    processed_line <- gsub("<[^>]+>", "", processed_line)
+    
+    body_text <- paste(body_text, processed_line)
+  }
+  
+  body_text <- gsub("[[:punct:]]+", " ", body_text)
+  words <- unlist(strsplit(body_text, "\\s+"))
+  words <- words[nchar(trimws(words)) > 0]
+  
+  return(length(words))
+}
+
+word_count <- count_words_qmd(knitr::current_input())
+```
+
+\newpage
+
+# Abstract {.unnumbered}
+
+
+::: {=latex}
+\vspace{1\baselineskip}
+:::
+
+**Keywords:** alternative credit scoring, financial inclusion, algorithmic fairness, data governance, POPIA compliance, Buy Now Pay Later, credit invisibles, South Africa, fintech regulation, machine learning in finance
+
+::: {=latex}
+\vspace{1\baselineskip}
+:::
+
+**Word Count: `r formatC(word_count, format="d", big.mark=",")`**
+
+---
+
+\newpage
+
+# Introduction
+

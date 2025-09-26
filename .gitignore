@@ -1,28 +1,111 @@
-# Quarto build and cache files
-*.html
-*.pdf
-.cache/
-_quarto/
-
-# R and RStudio
-.Rproj.user/
+# R and RStudio files
 .Rhistory
+.Rapp.history
 .RData
 .Ruserdata
+.Rproj.user/
 *.Rproj
 
-# VSCode
-.vscode/
+# R Environment Variables
+.Renviron
+.Rprofile
 
-# Excel lock files
+# Quarto output and cache
+/_site/
+/.quarto/
+*_cache/
+*_files/
+*.html
+*.pdf
+*.docx
+*.tex
+*.log
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Temporary files
 ~$*
+.~lock.*
+*.tmp
+*.temp
+*.bak
+*.backup
+*.swp
+*~
 
-# System files
+# OS generated files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+desktop.ini
 
-# Quarto publish metadata
-.quarto/
+# LaTeX auxiliary files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.fmt
+*.fot
+*.cb
+*.cb2
+.*.lb
+*.dvi
+*.xdv
+*-converted-to.*
+*.brf
+*.run.xml
 
-# GitHub Pages output (if using _site/)
-_site/
+# Bibliography auxiliary files
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+
+# Build tool auxiliary files
+*.fdb_latexmk
+*.synctex
+*.synctex(busy)
+*.synctex.gz
+*.synctex.gz(busy)
+*.pdfsync
+
+# Output directories
+output/
+results/
+figures/
+tables/
+cache/
+
+# Backup files
+backup/
+*.backup
+*.old
+
+# Package management
+renv/
+packrat/
+
+# Logs
+logs/
+*.log
+
+# Documentation build
+docs/_build/
+docs/.doctrees/
