@@ -1,0 +1,198 @@
+<svg viewBox="0 0 1200 820" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="820" fill="#ffffff"/>
+  
+  <!-- Title -->
+  <text x="600" y="35" font-size="24" font-weight="bold" text-anchor="middle" fill="#1a1a1a">
+    Alternative Credit Scoring Framework: Integrated System Architecture
+  </text>
+  
+  <!-- Section Headers Background -->
+  <rect x="40" y="55" width="320" height="35" fill="#f0f4f8" rx="3"/>
+  <rect x="440" y="55" width="320" height="35" fill="#f0f4f8" rx="3"/>
+  <rect x="840" y="55" width="320" height="35" fill="#f0f4f8" rx="3"/>
+  
+  <!-- Data Architecture Section (Left) -->
+  <g id="data-architecture">
+    <text x="200" y="77" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Data Architecture Layers</text>
+    
+    <!-- Data Source Layer -->
+    <rect x="50" y="110" width="300" height="75" fill="#e3f2fd" stroke="#1976d2" stroke-width="2" rx="5"/>
+    <text x="200" y="135" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">1. Data Source Layer</text>
+    <text x="200" y="155" font-size="12" text-anchor="middle" fill="#555">Telcos • Utilities • Banks</text>
+    <text x="200" y="170" font-size="12" text-anchor="middle" fill="#555">Retailers • Social Media</text>
+    
+    <!-- Edge Processing Layer -->
+    <rect x="50" y="205" width="300" height="75" fill="#fff3e0" stroke="#f57c00" stroke-width="2" rx="5"/>
+    <text x="200" y="230" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">2. Edge Processing Layer</text>
+    <text x="200" y="250" font-size="12" text-anchor="middle" fill="#555">Feature Extraction • Local Computation</text>
+    <text x="200" y="265" font-size="12" text-anchor="middle" fill="#555">Privacy Preservation</text>
+    
+    <!-- Orchestration Layer -->
+    <rect x="50" y="300" width="300" height="75" fill="#e8f5e9" stroke="#388e3c" stroke-width="2" rx="5"/>
+    <text x="200" y="325" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">3. Orchestration Layer</text>
+    <text x="200" y="345" font-size="12" text-anchor="middle" fill="#555">Consent Management • Query Routing</text>
+    <text x="200" y="360" font-size="12" text-anchor="middle" fill="#555">Secure Aggregation</text>
+    
+    <!-- Application Layer -->
+    <rect x="50" y="395" width="300" height="75" fill="#ffebee" stroke="#d32f2f" stroke-width="2" rx="5"/>
+    <text x="200" y="420" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">4. Application Layer</text>
+    <text x="200" y="440" font-size="12" text-anchor="middle" fill="#555">Credit Scoring Models</text>
+    <text x="200" y="455" font-size="12" text-anchor="middle" fill="#555">Decision Interface</text>
+  </g>
+  
+  <!-- Credit Application Flow (Center) -->
+  <g id="application-flow">
+    <text x="600" y="77" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Credit Application Flow</text>
+    
+    <!-- Flow boxes -->
+    <rect x="500" y="110" width="200" height="50" fill="#f5f5f5" stroke="#616161" stroke-width="2" rx="5"/>
+    <text x="600" y="140" font-size="13" text-anchor="middle" fill="#1a1a1a">1. Application Initiated</text>
+    
+    <!-- Arrow 1 -->
+    <line x1="600" y1="160" x2="600" y2="185" stroke="#616161" stroke-width="2"/>
+    <polygon points="595,185 600,195 605,185" fill="#616161"/>
+    
+    <rect x="500" y="195" width="200" height="50" fill="#f5f5f5" stroke="#616161" stroke-width="2" rx="5"/>
+    <text x="600" y="225" font-size="13" text-anchor="middle" fill="#1a1a1a">2. Consent Verification</text>
+    
+    <!-- Arrow 2 -->
+    <line x1="600" y1="245" x2="600" y2="270" stroke="#616161" stroke-width="2"/>
+    <polygon points="595,270 600,280 605,270" fill="#616161"/>
+    
+    <rect x="500" y="280" width="200" height="50" fill="#f5f5f5" stroke="#616161" stroke-width="2" rx="5"/>
+    <text x="600" y="310" font-size="13" text-anchor="middle" fill="#1a1a1a">3. Data Aggregation</text>
+    
+    <!-- Arrow 3 -->
+    <line x1="600" y1="330" x2="600" y2="355" stroke="#616161" stroke-width="2"/>
+    <polygon points="595,355 600,365 605,355" fill="#616161"/>
+    
+    <rect x="500" y="365" width="200" height="50" fill="#f5f5f5" stroke="#616161" stroke-width="2" rx="5"/>
+    <text x="600" y="395" font-size="13" text-anchor="middle" fill="#1a1a1a">4. Model Scoring</text>
+    
+    <!-- Arrow 4 -->
+    <line x1="600" y1="415" x2="600" y2="440" stroke="#616161" stroke-width="2"/>
+    <polygon points="595,440 600,450 605,440" fill="#616161"/>
+    
+    <rect x="500" y="450" width="200" height="50" fill="#f5f5f5" stroke="#616161" stroke-width="2" rx="5"/>
+    <text x="600" y="475" font-size="13" text-anchor="middle" fill="#1a1a1a">5. Decision + Explanation</text>
+    <text x="600" y="490" font-size="11" text-anchor="middle" fill="#666">(with recourse options)</text>
+  </g>
+  
+  <!-- Governance Structure (Right) -->
+  <g id="governance">
+    <text x="1000" y="77" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Governance &amp; Oversight</text>
+    
+    <!-- ACSA Box -->
+    <rect x="850" y="110" width="300" height="95" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="3" rx="5"/>
+    <text x="1000" y="135" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Alternative Credit Scoring</text>
+    <text x="1000" y="155" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Authority (ACSA)</text>
+    <text x="1000" y="175" font-size="11" text-anchor="middle" fill="#555">Model Certification • Fairness Monitoring</text>
+    <text x="1000" y="190" font-size="11" text-anchor="middle" fill="#555">Consumer Protection</text>
+    
+    <!-- NCR -->
+    <rect x="920" y="225" width="160" height="60" fill="#ede7f6" stroke="#512da8" stroke-width="2" rx="5"/>
+    <text x="1000" y="250" font-size="13" text-anchor="middle" fill="#1a1a1a">National Credit</text>
+    <text x="1000" y="265" font-size="13" text-anchor="middle" fill="#1a1a1a">Regulator (NCR)</text>
+    
+    <!-- Connecting line ACSA to NCR -->
+    <line x1="1000" y1="205" x2="1000" y2="225" stroke="#7b1fa2" stroke-width="2"/>
+    
+    <!-- Other stakeholders -->
+    <rect x="850" y="305" width="130" height="50" fill="#fce4ec" stroke="#c2185b" stroke-width="1.5" rx="5"/>
+    <text x="915" y="335" font-size="12" text-anchor="middle" fill="#1a1a1a">Lenders</text>
+    
+    <rect x="1020" y="305" width="130" height="50" fill="#fce4ec" stroke="#c2185b" stroke-width="1.5" rx="5"/>
+    <text x="1085" y="335" font-size="12" text-anchor="middle" fill="#1a1a1a">Data Providers</text>
+    
+    <!-- Consumer Advocate -->
+    <rect x="935" y="375" width="130" height="50" fill="#e0f2f1" stroke="#00796b" stroke-width="1.5" rx="5"/>
+    <text x="1000" y="405" font-size="12" text-anchor="middle" fill="#1a1a1a">Consumer Advocate</text>
+  </g>
+  
+  <!-- Integration Connections (cleaned up) -->
+  <g id="connections">
+    <!-- Data Architecture to Application Flow -->
+    <path d="M 350 337 Q 425 305 500 305" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3" fill="none" opacity="0.6"/>
+    
+    <!-- Application Flow to Governance -->
+    <path d="M 700 305 Q 775 305 850 305" stroke="#999" stroke-width="1.5" stroke-dasharray="5,3" fill="none" opacity="0.6"/>
+    
+    <!-- Flow to Appeals Process -->
+    <line x1="600" y1="500" x2="600" y2="530" stroke="#616161" stroke-width="2"/>
+    <polygon points="595,530 600,540 605,530" fill="#616161"/>
+  </g>
+  
+  <!-- Three-Tier Appeals Process (Bottom) -->
+  <g id="appeals">
+    <rect x="200" y="540" width="800" height="30" fill="#f0f4f8" rx="3"/>
+    <text x="600" y="560" font-size="16" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Three-Tier Appeals Process</text>
+    
+    <!-- Tier 1 -->
+    <rect x="250" y="585" width="200" height="75" fill="#e0f7fa" stroke="#00acc1" stroke-width="2" rx="5"/>
+    <text x="350" y="610" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Tier 1: Automated</text>
+    <text x="350" y="630" font-size="11" text-anchor="middle" fill="#555">Clear errors</text>
+    <text x="350" y="645" font-size="11" text-anchor="middle" fill="#555">24-hour response</text>
+    
+    <!-- Arrow to Tier 2 -->
+    <line x1="450" y1="622" x2="490" y2="622" stroke="#333" stroke-width="2"/>
+    <polygon points="490,617 500,622 490,627" fill="#333"/>
+    
+    <!-- Tier 2 -->
+    <rect x="500" y="585" width="200" height="75" fill="#fff8e1" stroke="#ffa000" stroke-width="2" rx="5"/>
+    <text x="600" y="610" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Tier 2: Human Review</text>
+    <text x="600" y="630" font-size="11" text-anchor="middle" fill="#555">Borderline cases</text>
+    <text x="600" y="645" font-size="11" text-anchor="middle" fill="#555">7-day response</text>
+    
+    <!-- Arrow to Tier 3 -->
+    <line x1="700" y1="622" x2="740" y2="622" stroke="#333" stroke-width="2"/>
+    <polygon points="740,617 750,622 740,627" fill="#333"/>
+    
+    <!-- Tier 3 -->
+    <rect x="750" y="585" width="200" height="75" fill="#f3e5f5" stroke="#7b1fa2" stroke-width="2" rx="5"/>
+    <text x="850" y="610" font-size="14" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Tier 3: Ombudsman</text>
+    <text x="850" y="630" font-size="11" text-anchor="middle" fill="#555">Systemic issues</text>
+    <text x="850" y="645" font-size="11" text-anchor="middle" fill="#555">Precedent setting</text>
+  </g>
+  
+  <!-- Key Technologies Box - Expanded height for better fit -->
+  <g id="technologies">
+    <rect x="50" y="680" width="530" height="65" fill="#fafafa" stroke="#bdbdbd" stroke-width="1" rx="5"/>
+    <text x="315" y="700" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Key Enabling Technologies</text>
+    <text x="60" y="718" font-size="10" fill="#555">• Homomorphic Encryption</text>
+    <text x="220" y="718" font-size="10" fill="#555">• Secure Multi-party Computation</text>
+    <text x="420" y="718" font-size="10" fill="#555">• Differential Privacy</text>
+    <text x="60" y="735" font-size="10" fill="#555">• Gradient Boosting</text>
+    <text x="180" y="735" font-size="10" fill="#555">• Explainable AI (XAI)</text>
+    <text x="320" y="735" font-size="10" fill="#555">• Federated Learning</text>
+  </g>
+  
+  <!-- Implementation Timeline -->
+  <g id="timeline">
+    <rect x="620" y="680" width="530" height="65" fill="#fafafa" stroke="#bdbdbd" stroke-width="1" rx="5"/>
+    <text x="885" y="700" font-size="13" font-weight="bold" text-anchor="middle" fill="#1a1a1a">Implementation Phases</text>
+    <text x="885" y="720" font-size="10" text-anchor="middle" fill="#555">Phase 1: Sandbox Testing (Months 1-12)</text>
+    <text x="885" y="735" font-size="10" text-anchor="middle" fill="#555">Phase 2: Pilot Deployment (Months 13-30) → Phase 3: Full Integration (Months 31+)</text>
+  </g>
+  
+  <!-- Bottom Legend/Key - Fixed visibility issues -->
+  <rect x="50" y="760" width="1100" height="40" fill="#ecf0f1" stroke="#bdc3c7" stroke-width="1" rx="5"/>
+  <text x="100" y="785" font-size="12" font-weight="bold" fill="#34495e">Key:</text>
+  
+  <!-- Line types -->
+  <text x="150" y="785" font-size="11" fill="#555">Solid lines = Direct relationships</text>
+  <text x="350" y="785" font-size="11" fill="#555">Dashed lines = Data/information flow</text>
+  
+  <!-- Color coding with better visibility -->
+  <text x="550" y="785" font-size="11" fill="#555">Colors:</text>
+  <rect x="600" y="773" width="15" height="15" fill="#1976d2" stroke="#1976d2"/>
+  <text x="620" y="785" font-size="11" fill="#555">Data/Tech</text>
+  <rect x="700" y="773" width="15" height="15" fill="#f57c00" stroke="#f57c00"/>
+  <text x="720" y="785" font-size="11" fill="#555">Processing</text>
+  <rect x="800" y="773" width="15" height="15" fill="#388e3c" stroke="#388e3c"/>
+  <text x="820" y="785" font-size="11" fill="#555">Coordination</text>
+  <rect x="910" y="773" width="15" height="15" fill="#d32f2f" stroke="#d32f2f"/>
+  <text x="930" y="785" font-size="11" fill="#555">Application</text>
+  <rect x="1010" y="773" width="15" height="15" fill="#7b1fa2" stroke="#7b1fa2"/>
+  <text x="1030" y="785" font-size="11" fill="#555">Governance</text>
+</svg>
