@@ -21,13 +21,16 @@ This dissertation asks you to explore how an alternative credit scoring system c
 ### Key Points of Discussion
 
 #### Shortcomings of traditional credit scoring
+
 - How do bureau-based models work, and why do they exclude thin and no-file consumers
 
 #### Alternative data sources and custodianship
+
 - What data exists in South Africa that could be used to supplement credit repayment information? E.g. mobile data, utility payments etc.
 - How can this data be shared? How should it be stored? Centralised or decentralised? What are the privacy and security risks?
 
 #### Credit scoring algorithmic design trade-offs
+
 - What are some of the trade-offs when considering simple (e.g. linear and logistic regression) vs more complex (e.g gradient boosting, neural nets) predictive algorithms for credit scoring?
 - Are there any concerns related to algorithmic bias?
 
@@ -45,6 +48,7 @@ This dissertation topic is open-ended. Examples of (or combinations of) ways to 
 ## 📚 Suggested Literature
 
 ### Core Papers
+
 - **Chioda, Gertler, Higgins, & Medina** (2025). FinTech Lending to Borrowers with No Credit History. *Working Paper*.
 - **Fuster, A., Goldsmith‐Pinkham, P., Ramadorai, T. and Walther, A.** (2022). Predictably unequal? The effects of machine learning on credit markets. *The Journal of Finance*, 77(1), pp.5-47.
 - **Berg, T., Burg, V., Gombović, A. and Puri, M.** (2020). On the rise of fintechs: Credit scoring using digital footprints. *The Review of Financial Studies*, 33(7), pp.2845-2897.
@@ -60,16 +64,19 @@ This dissertation topic is open-ended. Examples of (or combinations of) ways to 
 ## 📋 Assignment Guidelines
 
 ### ⏰ Key Deadlines
-- **Due Date**: TBA
-- **Submission Details**: To be provided closer to the submission date
+
+- **Due Date**: 28 November 2025
+- **Submission Details**: To be provided
 
 ### 📝 Requirements
+
 - **Word Count**: 5,000 words
 - **Maximum Limit**: 6,000 words (strict limit - may not exceed)
 - **Individual Work**: This mini dissertation must be completed individually
 - **Academic Standards**: Standard UCT guidelines for dissertation submissions apply
 
 ### 📋 Submission Requirements
+
 - ✅ Turnitin report submission
 - ✅ Signed plagiarism declaration
 - ✅ Adherence to academic integrity standards
@@ -79,6 +86,7 @@ This dissertation topic is open-ended. Examples of (or combinations of) ways to 
 ## 🎓 Academic Expectations
 
 This is a **mini dissertation** following full UCT dissertation standards, requiring:
+
 - Rigorous academic research methodology
 - Comprehensive literature review
 - Critical analysis and evaluation
