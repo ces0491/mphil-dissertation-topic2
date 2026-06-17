@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Topic Overview
+## Topic Overview
 
 Roughly one in three South African adults is considered "unscorable" by traditional credit bureaus. This means they either have no credit history or their credit file is too "thin" (lacking enough repayment data) for the bureau models to generate a reliable risk score. Without a score, these individuals are often automatically excluded from formal lending, regardless of their actual ability or willingness to repay.
 
@@ -14,7 +14,7 @@ Alternative credit scoring offers a potential solution. By drawing on non-tradit
 
 However, alternative scoring also introduces new challenges and trade-offs. More complex models raise questions around explainability and governance, and the use of sensitive behavioural data amplifies concerns about privacy, consent, and data custodianship. Evidence shows that even well-designed machine learning systems can unintentionally embed or amplify algorithmic bias, shifting risk classifications in ways that disadvantage certain groups.
 
-## 🔍 Research Focus
+## Research Focus
 
 This dissertation asks you to explore how an alternative credit scoring system could be responsibly designed for South Africa. It invites an analysis of the technical, regulatory, and ethical dimensions of such a system, including the trade-offs between simplicity and complexity, innovation and privacy, inclusion and profitability.
 
@@ -45,7 +45,7 @@ This dissertation topic is open-ended. Examples of (or combinations of) ways to 
 
 ---
 
-## 📚 Suggested Literature
+## Suggested Literature
 
 ### Core Papers
 
@@ -57,25 +57,25 @@ This dissertation topic is open-ended. Examples of (or combinations of) ways to 
 - **Karimi, A.H., Schölkopf, B. and Valera, I.** (2021, March). Algorithmic recourse: from counterfactual explanations to interventions. In *Proceedings of the 2021 ACM conference on fairness, accountability, and transparency* (pp. 353-362).
 - **Olckers, M. and Walsh, T.** (2023). Incentives to Offer Algorithmic Recourse. *Working Paper*.
 
-> 💡 **Note**: These are suggested papers to review. They are neither required nor sufficient for this thesis. You should look to read and cite more widely.
+> **Note**: These are suggested papers to review. They are neither required nor sufficient for this thesis. You should look to read and cite more widely.
 
 ---
 
-## 📋 Assignment Guidelines
+## Assignment Guidelines
 
-### ⏰ Key Deadlines
+### Key Deadlines
 
 - **Due Date**: 28 November 2025
 - **Submission Details**: To be provided
 
-### 📝 Requirements
+### Requirements
 
 - **Word Count**: 5,000 words
 - **Maximum Limit**: 6,000 words (strict limit - may not exceed)
 - **Individual Work**: This mini dissertation must be completed individually
 - **Academic Standards**: Standard UCT guidelines for dissertation submissions apply
 
-### 📋 Submission Requirements
+### Submission Requirements
 
 - ✅ Turnitin report submission
 - ✅ Signed plagiarism declaration
@@ -83,7 +83,7 @@ This dissertation topic is open-ended. Examples of (or combinations of) ways to 
 
 ---
 
-## 🎓 Academic Expectations
+## Academic Expectations
 
 This is a **mini dissertation** following full UCT dissertation standards, requiring:
 
